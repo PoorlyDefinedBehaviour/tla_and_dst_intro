@@ -1,0 +1,4 @@
+**/*.do.dot
+.vscode/
+dev/
+**/states

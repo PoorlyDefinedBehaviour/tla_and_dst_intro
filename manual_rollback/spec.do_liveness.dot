@@ -1,0 +1,34 @@
+digraph DiskGraph {
+node [shape=box,style=rounded]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+4826749256586387455 [label="/\\ k8s_state = \"ok\"\n/\\ pc = \"write_to_db\"\n/\\ db_state = \"ok\"",style = filled]
+4826749256586387455 -> -605067511673861259;
+-605067511673861259 [label="/\\ k8s_state = \"ok\"\n/\\ pc = \"write_to_k8s\"\n/\\ db_state = \"modified\"",tooltip="/\\ k8s_state = \"ok\"\n/\\ pc = \"write_to_k8s\"\n/\\ db_state = \"modified\""];
+4826749256586387455 -> 4826749256586387455;
+4826749256586387455 [label="/\\ k8s_state = \"ok\"\n/\\ pc = \"write_to_db\"\n/\\ db_state = \"ok\"",tooltip="/\\ k8s_state = \"ok\"\n/\\ pc = \"write_to_db\"\n/\\ db_state = \"ok\""];
+-605067511673861259 -> -8626791889747183500;
+-8626791889747183500 [label="/\\ k8s_state = \"modified\"\n/\\ pc = \"done\"\n/\\ db_state = \"modified\"",tooltip="/\\ k8s_state = \"modified\"\n/\\ pc = \"done\"\n/\\ db_state = \"modified\""];
+-605067511673861259 -> -605067511673861259;
+-605067511673861259 [label="/\\ k8s_state = \"ok\"\n/\\ pc = \"write_to_k8s\"\n/\\ db_state = \"modified\"",tooltip="/\\ k8s_state = \"ok\"\n/\\ pc = \"write_to_k8s\"\n/\\ db_state = \"modified\""];
+-605067511673861259 -> -4290471860450755049;
+-4290471860450755049 [label="/\\ k8s_state = \"failed\"\n/\\ pc = \"rollback_k8s\"\n/\\ db_state = \"modified\"",tooltip="/\\ k8s_state = \"failed\"\n/\\ pc = \"rollback_k8s\"\n/\\ db_state = \"modified\""];
+-8626791889747183500 -> -8626791889747183500;
+-8626791889747183500 [label="/\\ k8s_state = \"modified\"\n/\\ pc = \"done\"\n/\\ db_state = \"modified\"",tooltip="/\\ k8s_state = \"modified\"\n/\\ pc = \"done\"\n/\\ db_state = \"modified\""];
+-4290471860450755049 -> -4290471860450755049;
+-4290471860450755049 [label="/\\ k8s_state = \"failed\"\n/\\ pc = \"rollback_k8s\"\n/\\ db_state = \"modified\"",tooltip="/\\ k8s_state = \"failed\"\n/\\ pc = \"rollback_k8s\"\n/\\ db_state = \"modified\""];
+-4290471860450755049 -> -786895529027993974;
+-786895529027993974 [label="/\\ k8s_state = \"ok\"\n/\\ pc = \"done\"\n/\\ db_state = \"modified\"",tooltip="/\\ k8s_state = \"ok\"\n/\\ pc = \"done\"\n/\\ db_state = \"modified\""];
+-4290471860450755049 -> -2720568407569857843;
+-2720568407569857843 [label="/\\ k8s_state = \"failed\"\n/\\ pc = \"done\"\n/\\ db_state = \"modified\"",tooltip="/\\ k8s_state = \"failed\"\n/\\ pc = \"done\"\n/\\ db_state = \"modified\""];
+-786895529027993974 -> -786895529027993974;
+-786895529027993974 [label="/\\ k8s_state = \"ok\"\n/\\ pc = \"done\"\n/\\ db_state = \"modified\"",tooltip="/\\ k8s_state = \"ok\"\n/\\ pc = \"done\"\n/\\ db_state = \"modified\""];
+-2720568407569857843 -> -2720568407569857843;
+-2720568407569857843 [label="/\\ k8s_state = \"failed\"\n/\\ pc = \"done\"\n/\\ db_state = \"modified\"",tooltip="/\\ k8s_state = \"failed\"\n/\\ pc = \"done\"\n/\\ db_state = \"modified\""];
+{rank = same; 4826749256586387455;}
+{rank = same; -605067511673861259;}
+{rank = same; -4290471860450755049;-8626791889747183500;}
+{rank = same; -786895529027993974;-2720568407569857843;}
+}
+}

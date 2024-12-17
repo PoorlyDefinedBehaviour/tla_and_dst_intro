@@ -1,0 +1,176 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.20 of Day Month 20?? (rev: 5706453)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 94 and seed -6957323118411806466 with 1 worker on 4 cores with 3540MB heap and 64MB offheap memory [pid: 97838] (Linux 6.8.0-49-generic amd64, Ubuntu 11.0.25 x86_64, MSBDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /home/bruno/dev/tla_and_deterministic_simulation_testing_intro/invalid_cache_write/spec.tla
+Parsing file /tmp/tlc-9763170298496373006/TLC.tla (jar:file:/home/bruno/.vscode/extensions/tlaplus.vscode-ide-2024.12.161935/tools/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /tmp/tlc-9763170298496373006/FiniteSets.tla (jar:file:/home/bruno/.vscode/extensions/tlaplus.vscode-ide-2024.12.161935/tools/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /tmp/tlc-9763170298496373006/Naturals.tla (jar:file:/home/bruno/.vscode/extensions/tlaplus.vscode-ide-2024.12.161935/tools/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /tmp/tlc-9763170298496373006/Sequences.tla (jar:file:/home/bruno/.vscode/extensions/tlaplus.vscode-ide-2024.12.161935/tools/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module spec
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2024-12-16 23:38:36)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+<<>>
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2024-12-16 23:38:36.
+@!@!@ENDMSG 2190 @!@!@
+<<>>
+<<>>
+<<>>
+<<0>>
+<<>>
+<<>>
+<<>>
+<<>>
+<<>>
+<<>>
+<<0>>
+<<0>>
+<<0>>
+<<>>
+<<>>
+<<>>
+<<1>>
+<<>>
+<<>>
+<<>>
+<<>>
+<<>>
+<<>>
+<<>>
+<<>>
+<<0, 0>>
+<<0>>
+<<0>>
+<<0>>
+<<0>>
+<<0>>
+<<0>>
+<<>>
+<<>>
+<<>>
+<<1>>
+<<>>
+<<1>>
+<<1>>
+<<1>>
+<<>>
+<<>>
+<<>>
+<<2>>
+<<>>
+<<>>
+<<>>
+<<>>
+<<>>
+<<>>
+<<>>
+<<>>
+<<1>>
+<<>>
+<<>>
+<<>>
+<<0, 0>>
+<<0, 0>>
+<<0, 0>>
+<<0>>
+<<0>>
+<<0>>
+<<0, 1>>
+<<0>>
+<<0>>
+<<0>>
+<<0>>
+<<0>>
+<<0>>
+<<0>>
+<<0>>
+<<>>
+<<>>
+<<>>
+<<2>>
+<<>>
+<<1>>
+<<1, 0>>
+@!@!@STARTMSG 2110:1 @!@!@
+Invariant Cache_NewestValueIsNeverOverwritten is violated.
+@!@!@ENDMSG 2110 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ values_written_to_cache = <<>>
+/\ db_value = 0
+/\ cache = NULL
+/\ memory = (a :> NULL @@ b :> NULL)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <ReadFromDb(a) line 20, col 5 to line 21, col 61 of module spec>
+/\ values_written_to_cache = <<>>
+/\ db_value = 0
+/\ cache = NULL
+/\ memory = (a :> 0 @@ b :> NULL)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <WriteToDb line 31, col 5 to line 33, col 59 of module spec>
+/\ values_written_to_cache = <<>>
+/\ db_value = 1
+/\ cache = NULL
+/\ memory = (a :> 0 @@ b :> NULL)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <ReadFromDb(b) line 20, col 5 to line 21, col 61 of module spec>
+/\ values_written_to_cache = <<>>
+/\ db_value = 1
+/\ cache = NULL
+/\ memory = (a :> 0 @@ b :> 1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <WriteToCache(b) line 24, col 5 to line 28, col 29 of module spec>
+/\ values_written_to_cache = <<1>>
+/\ db_value = 1
+/\ cache = 1
+/\ memory = (a :> 0 @@ b :> NULL)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <WriteToCache(a) line 24, col 5 to line 28, col 29 of module spec>
+/\ values_written_to_cache = <<1, 0>>
+/\ db_value = 1
+/\ cache = 0
+/\ memory = (a :> NULL @@ b :> NULL)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(6) at 2024-12-16 23:38:37: 180 states generated (8.175 s/min), 79 distinct states found (3.588 ds/min), 41 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+180 states generated, 79 distinct states found, 41 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 6.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 1333ms at (2024-12-16 23:38:37)
+@!@!@ENDMSG 2186 @!@!@

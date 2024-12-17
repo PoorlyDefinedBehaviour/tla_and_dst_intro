@@ -1,0 +1,397 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.20 of Day Month 20?? (rev: 5706453)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 56 and seed 8646778444982076274 with 1 worker on 4 cores with 3540MB heap and 64MB offheap memory [pid: 84189] (Linux 6.8.0-49-generic amd64, Ubuntu 11.0.25 x86_64, MSBDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /home/bruno/dev/tla_and_deterministic_simulation_testing_intro/money_transfer/spec.tla
+Parsing file /tmp/tlc-8218922938520743109/TLC.tla (jar:file:/home/bruno/.vscode/extensions/tlaplus.vscode-ide-2024.12.161935/tools/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /tmp/tlc-8218922938520743109/FiniteSets.tla (jar:file:/home/bruno/.vscode/extensions/tlaplus.vscode-ide-2024.12.161935/tools/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /tmp/tlc-8218922938520743109/Integers.tla (jar:file:/home/bruno/.vscode/extensions/tlaplus.vscode-ide-2024.12.161935/tools/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /tmp/tlc-8218922938520743109/Sequences.tla (jar:file:/home/bruno/.vscode/extensions/tlaplus.vscode-ide-2024.12.161935/tools/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /tmp/tlc-8218922938520743109/Naturals.tla (jar:file:/home/bruno/.vscode/extensions/tlaplus.vscode-ide-2024.12.161935/tools/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Integers
+Semantic processing of module spec
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2024-12-16 22:26:02)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2024-12-16 22:26:02.
+@!@!@ENDMSG 2190 @!@!@
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"UpdateDb", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 4>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+@!@!@STARTMSG 2110:1 @!@!@
+Invariant BalanceIsAlwaysZeroOrMore is violated.
+@!@!@ENDMSG 2110 @!@!@
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ db_balances = [alice |-> 2, bob |-> 2]
+/\ pc = <<"CheckBalance", "CheckBalance", "CheckBalance", "CheckBalance">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <CheckBalance(1) line 19, col 5 to line 24, col 32 of module spec>
+/\ db_balances = [alice |-> 2, bob |-> 2]
+/\ pc = <<"UpdateDb", "CheckBalance", "CheckBalance", "CheckBalance">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <UpdateDb(1) line 27, col 5 to line 32, col 41 of module spec>
+/\ db_balances = [alice |-> 1, bob |-> 3]
+/\ pc = <<"Done", "CheckBalance", "CheckBalance", "CheckBalance">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <CheckBalance(2) line 19, col 5 to line 24, col 32 of module spec>
+/\ db_balances = [alice |-> 1, bob |-> 3]
+/\ pc = <<"Done", "UpdateDb", "CheckBalance", "CheckBalance">>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <CheckBalance(3) line 19, col 5 to line 24, col 32 of module spec>
+/\ db_balances = [alice |-> 1, bob |-> 3]
+/\ pc = <<"Done", "UpdateDb", "UpdateDb", "CheckBalance">>
+
+@!@!@ENDMSG 2217 @!@!@
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+@!@!@STARTMSG 2217:4 @!@!@
+6: <UpdateDb(2) line 27, col 5 to line 32, col 41 of module spec>
+/\ db_balances = [alice |-> 0, bob |-> 4]
+/\ pc = <<"Done", "Done", "UpdateDb", "CheckBalance">>
+
+@!@!@ENDMSG 2217 @!@!@
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+@!@!@STARTMSG 2217:4 @!@!@
+7: <UpdateDb(3) line 27, col 5 to line 32, col 41 of module spec>
+/\ db_balances = [alice |-> -1, bob |-> 5]
+/\ pc = <<"Done", "Done", "Done", "CheckBalance">>
+
+@!@!@ENDMSG 2217 @!@!@
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 1>>
+<<"UpdateDb", 1>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"UpdateDb", 2>>
+<<"CheckBalance ff>ch", 1>>
+<<"CheckBalance ff>ch", 2>>
+<<"CheckBalance ff>ch", 3>>
+<<"UpdateDb", 3>>
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(7) at 2024-12-16 22:26:02: 192 states generated (8.622 s/min), 67 distinct states found (3.008 ds/min), 15 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+192 states generated, 67 distinct states found, 15 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 7.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 1364ms at (2024-12-16 22:26:02)
+@!@!@ENDMSG 2186 @!@!@
