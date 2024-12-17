@@ -23,30 +23,23 @@ func newApp(cache Cache, db Database) *app {
 }
 
 func (app *app) getValue(reply func(int, error)) {
-	var writeToCache = func(value int, err error) {
-		if err != nil {
-			// TODO
-		}
-
-		// Value not set.
-		if value == 0 {
-			reply(value, nil)
-			return
-		}
-
-		app.cache.Set("value", value, func(err error) {
-
-			reply(value, err)
-		})
-	}
-
 	app.cache.Get("value", func(value int, ok bool) {
 		if ok {
 			reply(value, nil)
 			return
 		}
 
-		app.db.GetValue(writeToCache)
+		app.db.GetValue(func(v int, err error) {
+			// Value not set.
+			if value == 0 {
+				reply(value, nil)
+				return
+			}
+
+			app.cache.Set("value", value, func(err error) {
+				reply(value, err)
+			})
+		})
 	})
 
 }
